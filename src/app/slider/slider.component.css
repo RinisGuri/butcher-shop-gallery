@@ -1,0 +1,38 @@
+/* Slider Container Styles */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  /* Set height to 100% of the viewport height */
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Set height to 100% of the viewport height */
+  overflow: hidden;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* Set height to 100% of the viewport height */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-container.active {
+  opacity: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
